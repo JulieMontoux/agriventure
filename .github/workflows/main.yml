@@ -19,6 +19,8 @@ jobs:
       with:
         node-version: '20'
     - name: Install dependencies
-      run: npm install
+      run: 
+        cd app-agri
+        npm install
     - name: Run tests
       run: npm run test
